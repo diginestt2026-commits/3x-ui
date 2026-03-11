@@ -22,8 +22,8 @@ certbot renew --dry-run
     
 # VPN Server Guide
 
-## SSH Access Fix (GCP)
-Google Cloud မှာ SSH ဝင်မရရင် ဒါတွေလုပ်ပါ-
+## SSH Access Fix 
+PuTTy နဲ့ ဝင်မရရင် ဒါတွေလုပ်ပါ- ssh ထဲဝင်
 * `nano /etc/ssh/sshd_config` ထဲဝင်
 * `PermitRootLogin yes` ပြောင်း
 * `PasswordAuthentication yes` ပြောင်း
