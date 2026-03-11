@@ -69,6 +69,11 @@ crontab -e
 ```bash
 0 0 * * * rm -rf /var/log/*.log && rm -rf /var/log/x-ui/*.log && apt clean
 ```
+## Check Xray Error
+
+```bash
+x-ui log
+```
 
 
 
