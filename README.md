@@ -28,4 +28,5 @@ PuTTy နဲ့ ဝင်မရရင် ဒါတွေလုပ်ပါ- ssh 
 * `PermitRootLogin yes` ပြောင်း
 * `PasswordAuthentication yes` ပြောင်း
 * `systemctl restart ssh`
+* `passwd` password အသစ်ပေးပြီးရင် PuTTy နဲ့ join ပြီးဝင်လို့ရပါပြီ
 
