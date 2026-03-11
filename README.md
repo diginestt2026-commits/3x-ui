@@ -19,4 +19,13 @@ certbot renew --dry-run
 # **Clone the Project Repository:**
     git clone https://github.com/MHSanaei/3x-ui.git
     cd 3x-ui
-   ```
+    
+# VPN Server Guide
+
+## SSH Access Fix (GCP)
+Google Cloud မှာ SSH ဝင်မရရင် ဒါတွေလုပ်ပါ-
+* `nano /etc/ssh/sshd_config` ထဲဝင်
+* `PermitRootLogin yes` ပြောင်း
+* `PasswordAuthentication yes` ပြောင်း
+* `systemctl restart ssh`
+
