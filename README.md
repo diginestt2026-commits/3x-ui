@@ -30,3 +30,16 @@ PuTTy နဲ့ ဝင်မရရင် ဒါတွေလုပ်ပါ- ssh 
 * `systemctl restart ssh`
 * `passwd` password အသစ်ပေးပြီးရင် PuTTy နဲ့ join ပြီးဝင်လို့ရပါပြီ
 
+## Build Swap
+```sudo fallocate -l 1G /swapfile```
+```sudo chmod 600 /swapfile```
+```sudo mkswap /swapfile```
+```sudo swapon /swapfile```
+
+စက်ပိတ်ပြီးပြန်ဖွင့်ရင် အလိုအလျောက်အလုပ်လုပ်အောင်
+```echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab``` 
+
+အောင်မြင်မမြင်စစ်နည်း
+```free -h```
+
+
