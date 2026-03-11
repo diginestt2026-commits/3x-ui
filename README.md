@@ -58,5 +58,17 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```bash
 free -h
 ```
+## Cron Job (Schedule a daily auto-cleanup for unnecessary logs)
+### Automatically clear junk log files every day at midnight without deleting user usage records
+
+Run Terminal (Press 1 if asked to choose an editor)
+```bash
+crontab -e
+```
+အောက်ဆုံးကြောင်းမှာ ရိုက်ထည့်ပါ
+```bash
+0 0 * * * rm -rf /var/log/*.log && rm -rf /var/log/x-ui/*.log && apt clean
+```
+
 
 
