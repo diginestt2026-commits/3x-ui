@@ -31,15 +31,20 @@ PuTTy နဲ့ ဝင်မရရင် ဒါတွေလုပ်ပါ- ssh 
 * `passwd` password အသစ်ပေးပြီးရင် PuTTy နဲ့ join ပြီးဝင်လို့ရပါပြီ
 
 ## Build Swap
+
+Allocate the space first (1GB will be created)
 ```bash
-    sudo fallocate -l 1G /swapfile
+sudo fallocate -l 1G /swapfile
 ```
+Permission
 ```bash
 sudo chmod 600 /swapfile
 ```
+Change it to a Swap File
 ```bash
 sudo mkswap /swapfile
 ```
+Start using it
 ```bash
 sudo swapon /swapfile
 ```
