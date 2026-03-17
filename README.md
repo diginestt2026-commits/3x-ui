@@ -75,5 +75,11 @@ crontab -e
 x-ui log
 ```
 
+## Clone the Project Repository:
+```bash
+git clone https://github.com/MHSanaei/3x-ui.git
+cd 3x-ui
+```
+
 
 
