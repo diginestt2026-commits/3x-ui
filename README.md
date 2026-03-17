@@ -16,10 +16,15 @@ apt-get install certbot -y
 sudo certbot certonly --standalone -d yourdomain.com
 certbot renew --dry-run
 ```
-## **Clone the Project Repository:**
-    git clone https://github.com/MHSanaei/3x-ui.git
-    cd 3x-ui
-    
+Check SSL Certificate:
+```bash
+certbot certificates
+```
+Remove Domain Certificate
+```bash
+sudo certbot delete
+```
+
 # VPN Server Guide
 
 ## SSH Access Fix 
